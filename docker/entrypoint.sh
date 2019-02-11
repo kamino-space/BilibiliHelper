@@ -18,7 +18,7 @@ if [ ! -z "$ROOMID" ]; then
 fi
 
 if [ ! -z "$CALLBACK" ]; then
-  echo -e "\033[32mUsing callback:\033[0m \"${CALLBACK}\"""
+  echo -e "\033[32mUsing callback:\033[0m \"${CALLBACK}\""
   sed -i -e "s:CALLBACK_URL=\"\":CALLBACK_URL=\"${CALLBACK}\"":" /app/config
 fi
 
